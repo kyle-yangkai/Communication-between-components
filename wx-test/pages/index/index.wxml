@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view>方法1：通过子组件自定义属性将父组件的值（{{dadVal1}}）直接传给子组件</view>
+<button bindtap='sendValToSon2'>（方法2）：父组件传值（{{dadVal2}}）给子组件</button>
+<button bindtap='getFuncFromSon'>父组件调用子组件的方法</button>
+<view>接受到的子组件的值为：{{sonVal}}</view>
+
+<view style="background-color:red; color:#ffffff;margin:30px;text-align:center">以下为组件内容</view>
+
+<modal id="modal" son-val1="{{dadVal1}}"  bindmyevent="getSonVal"></modal>
+
+
+

@@ -1,0 +1,7 @@
+<!--components/modal/modal.wxml-->
+<view>
+  <view>通过方法1接收到的父组件值为：{{sonVal1}}</view>
+  <view>通过方法2接收到的父组件值为：{{sonVal2}}</view>
+  <view>父组件是否调用了子组件的方法：{{state}}</view>
+  <button bindtap='sendValToDad'>子组件传值"{{sonVal}}"给父组件</button>
+</view>
